@@ -3,63 +3,87 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <h1>Contact Us</h1>
+      <p className="sub-title">lorem ipsum</p>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+      <div id="contact-container">
+        <div className="contact-info">
+          <h4>
+            Contact Information
+          </h4>
+          <p>
+            Fill up the form and then click send
+          </p>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          <div className="icon-text">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <span>718-234-5678</span>
+          </div>
+          <div className="icon-text">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <span>admin@billys.com</span>
+          </div>
+          <div className="icon-text">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <span>435 Grand Ave, Ridgewood, NY 11385</span>
+          </div>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          <div className="social-media">
+            <a href="#" className="icon-circle">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#" className="icon-circle">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="#" className="icon-circle">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="#" className="icon-circle">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
-      </main>
+        <form>
+          <div className="col">
+            <div className="form-group">
+              <label>First Name</label>
+              <input type="text" />
+            </div>
+            <div className="form-group">
+              <label>Last Name</label>
+              <input type="text" />
+            </div>
+          </div>
+          <div className="col">
+            <div className="form-group">
+              <label>E-Mail</label>
+              <input type="email" />
+            </div>
+            <div className="form-group">
+              <label>Phone #</label>
+              <input type="tel" />
+            </div>
+          </div>
+          <div className="col">
+            <div className="form-group">
+              <label>What Type of Website Do You Need?</label>
+              <div className="radio-buttons">
+                <input type="radio" name="type" value="E-commerce" /> <label>Ecommerce</label>
+                <input type="radio" name="type" value="Personal" /> <label>Personal</label>
+                <input type="radio" name="type" value="Landing Page" /> <label>Landing Page</label>
+              </div>
+            </div>
+          </div>
+        </form>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+      </div>
+
+    </>
   )
 }
