@@ -71,13 +71,30 @@ export default function Home() {
             </div>
           </div>
           <div className="col">
-            <div className="form-group">
+            <div className="form-group solo">
               <label>What Type of Website Do You Need?</label>
-              <div className="radio-buttons">
-                <input type="radio" name="type" value="E-commerce" /> <label>Ecommerce</label>
-                <input type="radio" name="type" value="Personal" /> <label>Personal</label>
-                <input type="radio" name="type" value="Landing Page" /> <label>Landing Page</label>
+              <div id="radio-buttons">
+                <div className="radio-button">
+                  <input type="radio" id="radioecommerce" name="type" value="ecommerce" /> <label for="radioecommerce">Ecommerce</label>
+                </div>
+                <div className="radio-button">
+                  <input type="radio" id="radiopersonal" name="type" value="personal" /> <label for="radiopersonal">Personal</label>
+                </div>
+                <div className="radio-button">
+                  <input type="radio" id="radiolandingpage" name="type" value="landingpage" /> <label for="radiolandingpage">Landing Page</label>
+                </div>
               </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="form-group solo">
+              <label>Message</label>
+              <textarea></textarea>
+            </div>
+          </div>
+          <div className="col">
+            <div className="form-group solo right">
+              <button className="primary">Send Message</button>
             </div>
           </div>
         </form>
