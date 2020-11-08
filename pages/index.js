@@ -22,30 +22,30 @@ export default function Home() {
           </p>
 
           <div className="icon-text">
-            <i class="fa fa-phone" aria-hidden="true"></i>
+            <i className="fa fa-phone" aria-hidden="true"></i>
             <span>718-234-5678</span>
           </div>
           <div className="icon-text">
-            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <i className="fa fa-envelope" aria-hidden="true"></i>
             <span>admin@billys.com</span>
           </div>
           <div className="icon-text">
-            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <i className="fa fa-map-marker" aria-hidden="true"></i>
             <span>435 Grand Ave, Ridgewood, NY 11385</span>
           </div>
 
           <div className="social-media">
             <a href="#" className="icon-circle">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
+              <i className="fa fa-facebook" aria-hidden="true"></i>
             </a>
             <a href="#" className="icon-circle">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <i className="fa fa-twitter" aria-hidden="true"></i>
             </a>
             <a href="#" className="icon-circle">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <i className="fa fa-instagram" aria-hidden="true"></i>
             </a>
             <a href="#" className="icon-circle">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
+              <i className="fa fa-linkedin" aria-hidden="true"></i>
             </a>
           </div>
         </div>
@@ -75,13 +75,13 @@ export default function Home() {
               <label>What Type of Website Do You Need?</label>
               <div id="radio-buttons">
                 <div className="radio-button">
-                  <input type="radio" id="radioecommerce" name="type" value="ecommerce" /> <label for="radioecommerce">Ecommerce</label>
+                  <input type="radio" id="radioecommerce" name="type" value="ecommerce" /> <label htmlFor="radioecommerce">Ecommerce</label>
                 </div>
                 <div className="radio-button">
-                  <input type="radio" id="radiopersonal" name="type" value="personal" /> <label for="radiopersonal">Personal</label>
+                  <input type="radio" id="radiopersonal" name="type" value="personal" /> <label htmlFor="radiopersonal">Personal</label>
                 </div>
                 <div className="radio-button">
-                  <input type="radio" id="radiolandingpage" name="type" value="landingpage" /> <label for="radiolandingpage">Landing Page</label>
+                  <input type="radio" id="radiolandingpage" name="type" value="landingpage" /> <label htmlFor="radiolandingpage">Landing Page</label>
                 </div>
               </div>
             </div>
